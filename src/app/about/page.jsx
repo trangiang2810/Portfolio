@@ -41,7 +41,7 @@ const AboutPage = () => {
             <div className="flex flex-col-reverse lg:flex-row items-center gap-5 sm:gap-8">
               <div className="md:text-lg">
                 <p className="hang_indent">
-                  I'm is Giang, a senior student with a passion for web
+                  I{"'"}m is Giang, a senior student with a passion for web
                   programming and is looking for internship opportunities in
                   this field. With solid basic knowledge of HTML, CSS and
                   JavaScript, along with the ability to use frameworks like
