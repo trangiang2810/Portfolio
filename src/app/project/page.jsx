@@ -19,7 +19,7 @@ const PortfolioPage = () => {
       id: 1,
       color: "from-purple-200 to-red-200",
       title: "Web Sell",
-      desc: "Bán3 hàng nội thất ahihihihihih hihhhhhhhhhhi hih ih ih ih ihi hi hi hih ih i",
+      technologies: "REACTJS",
       img: "/pr1.png",
       link: "https://trangiang2810.github.io/Web-sales/",
     },
@@ -27,7 +27,7 @@ const PortfolioPage = () => {
       id: 2,
       color: "from-red-200 to-orange-200",
       title: "Cooky",
-      desc: "Công thức nấu ăn ahihihihihih hihhhhhhhhhhi hih ih ih ih ihi hi hi hih ih i",
+      technologies: "NEXTJS",
       img: "/pr2.png",
       link: "https://cooky-56cv.vercel.app/",
     },
@@ -35,7 +35,7 @@ const PortfolioPage = () => {
       id: 3,
       color: "from-orange-200 to-yellow-200",
       title: "Day Love",
-      desc: "Bán3 hàng nội thất ahihihihihih hihhhhhhhhhhi hih ih ih ih ihi hi hi hih ih i",
+      technologies: "NEXTJS",
       img: "/pr3.png",
       link: "https://github.com/trangiang2810/MyLove.git",
     },
@@ -109,14 +109,16 @@ const PortfolioPage = () => {
                 key={item.id}
               >
                 <div className="flex flex-col gap-8 md:gap-4 text-white">
-                  <h1 className="text-xl font-bold md:text-2xl lg:text-3xl xl:text-4xl">
-                    {item.title}
-                  </h1>
+                  <div className="">
+                    <h1 className="text-xl font-bold md:text-2xl lg:text-3xl xl:text-4xl">
+                      {item.title}
+                    </h1>
+                    <p className="text-sm text-gray-400">{item.technologies}</p>
+                  </div>
                   {/* <div className="relative w-80 h-56 md:w-96 md:h-64 lg:h-[350px] lg:w-[500px] xl:w-[600px] xl:h-[420px]"> */}
                   <div className="relative w-80 h-44 sm:h-80 sm:w-[560px] md:w-[680px] md:h-96 lg:h-[460px] lg:w-[800px] xl:w-[900px] xl:h-[500px]">
                     <Image src={item.img} alt="" fill />
                   </div>
-                  <p className="lg:text-xl">{item.desc}</p>
                   <Link href={item.link} className="flex justify-end">
                     <button className="p-2 text-sm md:p-3 md:text-lg bg-white hover:bg-gray-600 text-gray-600 hover:text-white font-semibold m-4 rounded">
                       See More

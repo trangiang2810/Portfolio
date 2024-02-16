@@ -22,9 +22,9 @@ export default function Home() {
           />
         </div>
         {/* TEXT  */}
-        <div className="h-full lg:w-1/2 flex flex-col gap-5 lg:gap-8 justify-center pb-4">
+        <div className="h-full lg:w-1/2 flex flex-col gap-5 lg:gap-8 lg:justify-center p-4">
           <div className="flex flex-col gap-2">
-            <div className="text-2xl md:text-4xl font-bold">
+            <div className="text-3xl md:text-4xl font-bold">
               <p className="">Hi,</p>
               <p className="">I'm Giang,</p>
               <p>Web Developer</p>
