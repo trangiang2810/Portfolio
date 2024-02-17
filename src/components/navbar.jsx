@@ -68,7 +68,7 @@ const Navbar = () => {
   ];
   return (
     <div className="h-full flex items-center justify-between px-4 sp:px-8 md:px-12 lg:px-20 xl:px-28 text-xl">
-      <div className="hidden md:flex gap-4 w-1/3 font-bold">
+      <div className="hidden md:flex gap-4 w-1/3 font-semibold">
         {links.map((link, index) => (
           <Link
             className={`rounded p-1 ${

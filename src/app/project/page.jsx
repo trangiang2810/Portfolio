@@ -117,7 +117,7 @@ const PortfolioPage = () => {
                   </div>
                   {/* <div className="relative w-80 h-56 md:w-96 md:h-64 lg:h-[350px] lg:w-[500px] xl:w-[600px] xl:h-[420px]"> */}
                   <div className="relative w-80 h-44 sm:h-80 sm:w-[560px] md:w-[680px] md:h-96 lg:h-[460px] lg:w-[800px] xl:w-[900px] xl:h-[500px]">
-                    <Image src={item.img} alt="" fill />
+                    <Image src={item.img} alt="" fill className="px-2" />
                   </div>
                   <Link href={item.link} className="flex justify-end">
                     <button className="p-2 text-sm md:p-3 md:text-lg bg-white hover:bg-gray-600 text-gray-600 hover:text-white font-semibold m-4 rounded">

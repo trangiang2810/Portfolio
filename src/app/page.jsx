@@ -26,7 +26,7 @@ export default function Home() {
           <div className="flex flex-col gap-2">
             <div className="text-3xl md:text-4xl font-bold">
               <p className="">Hi,</p>
-              <p className="">I{'\''}m Giang,</p>
+              <p className="">I{"'"}m Giang,</p>
               <p>Web Developer</p>
             </div>
             <h1 className="text-gray-500 tracking-widest ">

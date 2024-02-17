@@ -40,9 +40,9 @@ const ContactPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col lg:flex-row px-4 sp:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full flex flex-col overflow-scroll lg:flex-row px-4 sp:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* Text container  */}
-        <div className="py-8 lg:w-1/2 flex items-center justify-center text-4xl lg:text-6xl">
+        <div className="py-5 md:py-8 lg:w-1/2 flex items-center justify-center text-4xl lg:text-6xl">
           <motion.div>
             {text.split("").map((letter, index) => (
               <motion.span
@@ -65,7 +65,7 @@ const ContactPage = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="h-auto lg:w-1/2 bg-pink-50 rounded-xl text-xl flex flex-col mt-[5%] gap-8 justify-center lg:p-24 p-10 md:p-16"
+          className="h-auto lg:w-1/2 bg-pink-50 rounded-xl sm:text-xl text-lg flex flex-col my-[2%] sm:my-[5%] gap-7 sm:gap-8 justify-center lg:p-24 p-10 md:p-16"
         >
           <span>Dear Truong Giang,</span>
           <textarea
@@ -84,12 +84,12 @@ const ContactPage = () => {
             Send
           </button>
           {success && (
-            <span className="text-green-600 font-semibold">
+            <span className="text-green-600 font-semibold text-lg">
               Your message has been sent successfully
             </span>
           )}
           {error && (
-            <span className="text-red-600 font-semibold">
+            <span className="text-red-600 font-semibold text-lg">
               Something went wrong!
             </span>
           )}
